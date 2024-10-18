@@ -42,4 +42,4 @@ Get the full source code from [here2](https://).
 
 ---
 
-**Slay with Elegance** website
+**Slay with Elegance!**
