@@ -36,9 +36,9 @@ Welcome to **Slay with Elegance**, a premier hairstyling and beauty service prov
 - **Special Offers:** Up to 20% off on selected services.
 - **Booking:** Book your appointments with ease via Calendly integration.
 
-Get the full source code from [here1](https://www.buymeacoffee.com/tech2etc/e/50932).
+Get the full source code from [here1](https://).
 
-Get the full source code from [here2](https://ko-fi.com/s/06e4db9e09).
+Get the full source code from [here2](https://).
 
 ---
 
