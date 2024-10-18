@@ -1,33 +1,45 @@
-# Build-and-Deploy-Ecommerce-Website-With-HTML-CSS-JavaScript
 
-[<img alt="Build-and-Deploy-Ecommerce-Website-With-HTML-CSS-JavaScript" width="100%" src="https://github.com/tech2etc/Youtube-Tutorials/blob/main/Build%20and%20Deploy%20Ecommerce%20Website%20With%20HTML%20CSS%20JavaScript%20Full%20Responsive%20Ecommerce%20Course%20FREE.PNG?raw=true" />](https://youtu.be/P8YuWEkTeuE/)
+---
 
-## About this course
-LEARN HOW TO BUILD AND DEPLOY FULL RESPONSIVE ECOMMERCE WEBSITE USING HTML CSS & JAVASCRIPT. This is a free HTML CSS Course. And in this course we will learn how to build and deploy a full multipage ecommerce website completely from scratch step by step. Will Create from responsive navbar using html CSS JavaScript to responsive footer in one video.
+# Slay-With-Elegance-Website
 
-## Why This Course?
-- Responsive Ecommerce Website Tutorial Using HTML CSS & JavaScript.
-- Completely For Beginners.
-- Multipage Ecommerce Website Project.
-- Best Beginner Friendly Free Course On YouTube.
-- Learn How to build amazing professional and responsive websites.
-- Learn the fundamentals of web design.
-- Modern CSS, including flexbox and CSS Grid for layout.
-- Modern CSS techniques to create stunning designs and effects.
-- How to use common components and layout patterns for professional website design and development.
-- Advanced responsive design using media queries.
-- And Many More.
+[<img alt="Slay with Elegance" width="100%" src="https://github.com/" />](https://www.slaywithelegance.com/)
 
-## Sections
-- Part1: Responsive Home Page Design.
-- Part2: Shop Page & Single Product Page.
-- Part3: Blog Page.
-- Part4: About Page.
-- Part5: Contact Us.
-- Part6: Ecommerce Shopping Cart.
+## About this Website
 
-Here you will find all the images I'm using to create this responsive ecommerce website. In future image folder can update.
+Welcome to **Slay with Elegance**, a premier hairstyling and beauty service provider where style meets elegance. This website showcases our top-notch beauty services, an extensive gallery of our work, and special offers. Our website is designed with a user-friendly interface, built using HTML, CSS, and JavaScript to offer a seamless experience for visitors to book appointments and explore services.
+
+## Features
+- Responsive website design for hairstyling services.
+- Fully optimized for mobile and desktop views.
+- Easy-to-navigate multi-page structure: Home, Services, Gallery, About, and Contact Us.
+- Special features such as home services, product deliveries, and walk-in acceptance.
+- Integrated online booking functionality for appointments.
+- High-quality images showcasing our hairstyling work.
+
+## Why Visit Our Site?
+- Elegant and professional website design.
+- A fully responsive website that adapts to all screen sizes.
+- Intuitive navigation for a smooth user experience.
+- View our service offerings, gallery, and book appointments with ease.
+- Modern CSS features like flexbox and grid for an aesthetic layout.
+- Learn more about our services and explore current promotions.
+
+## Website Sections
+- **Home Page:** Highlights our core services and mission.
+- **Services Page:** Explore our wide range of hairstyling services, including braiding, frontal installations, and home services.
+- **Gallery Page:** Browse our portfolio of hairstyles and transformations.
+- **About Page:** Learn more about our story and what makes us stand out.
+- **Contact Us Page:** Get in touch or book an appointment online.
+
+## Explore More
+- **Special Offers:** Up to 20% off on selected services.
+- **Booking:** Book your appointments with ease via Calendly integration.
 
 Get the full source code from [here1](https://www.buymeacoffee.com/tech2etc/e/50932).
 
 Get the full source code from [here2](https://ko-fi.com/s/06e4db9e09).
+
+---
+
+**Slay with Elegance** website
