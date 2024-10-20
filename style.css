@@ -641,10 +641,13 @@ h2 {
     margin-top: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px; /* Restricts the width for better readability */
-    margin: 0 auto; /* Centers the content within the page */
+    max-width: 800px;
+    /* Restricts the width for better readability */
+    margin: 0 auto;
+    /* Centers the content within the page */
     padding: 20px;
-    text-align: left; /* Aligns all text to the left */
+    text-align: left;
+    /* Aligns all text to the left */
 }
 
 .privacy-policy h1 {
@@ -660,7 +663,8 @@ h2 {
     text-align: left;
 }
 
-.privacy-policy p, .privacy-policy ul {
+.privacy-policy p,
+.privacy-policy ul {
     margin-bottom: 20px;
     font-size: 18px;
     color: #555;
@@ -681,35 +685,46 @@ h2 {
     margin-top: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px; /* Restricts the width for better readability */
-    margin: 0 auto; /* Centers the content within the page */
+    max-width: 800px;
+    /* Restricts the width for better readability */
+    margin: 0 auto;
+    /* Centers the content within the page */
     padding: 20px;
-    text-align: left; /* Aligns all text to the left */
-    
+    text-align: left;
+    /* Aligns all text to the left */
+
 }
 
-.terms-conditions h1, 
-.terms-conditions h2, 
+.terms-conditions h1,
+.terms-conditions h2,
 .terms-conditions p {
-    text-align: left; /* Ensures all text and headings are aligned left */
-    margin-bottom: 20px; /* Adds space between sections */
-    line-height: 1.6; /* Adjusts line spacing for readability */
-    color: #333; /* Font color */
+    text-align: left;
+    /* Ensures all text and headings are aligned left */
+    margin-bottom: 20px;
+    /* Adds space between sections */
+    line-height: 1.6;
+    /* Adjusts line spacing for readability */
+    color: #333;
+    /* Font color */
 }
 
 .terms-conditions h1 {
-    font-size: 36px; /* Sets size for main heading */
+    font-size: 36px;
+    /* Sets size for main heading */
     font-weight: bold;
 }
 
 .terms-conditions h2 {
-    font-size: 24px; /* Slightly smaller font size for subheadings */
+    font-size: 24px;
+    /* Slightly smaller font size for subheadings */
     font-weight: bold;
 }
 
 .terms-conditions p {
-    font-size: 16px; /* Font size for paragraphs */
-    margin-bottom: 15px; /* Space below each paragraph */
+    font-size: 16px;
+    /* Font size for paragraphs */
+    margin-bottom: 15px;
+    /* Space below each paragraph */
 }
 
 
@@ -841,6 +856,7 @@ footer .copyright {
 #page-header p {
     color: #fff;
 }
+
 /* 
 #pagination {
     text-align: center;
@@ -1137,10 +1153,12 @@ footer .copyright {
         box-shadow: 0 40px 60px rgb(0, 0, 0, 0.1);
         padding: 80px 0 0 10px;
         transition: 0.3s;
+
     }
 
     #navbar.active {
         right: 0px;
+        
     }
 
     #navbar li {
@@ -1150,6 +1168,7 @@ footer .copyright {
     #mobile {
         display: flex;
         align-items: center;
+        color: #EAB948;
     }
 
     #mobile li {
@@ -1222,6 +1241,30 @@ footer .copyright {
 
     #form-details form {
         width: 50%;
+    }
+
+    /*Terms & Conditions */
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .privacy-policy {
+        padding: 20px;
+    }
+
+    .privacy-policy h1 {
+        font-size: 28px;
+    }
+
+    .privacy-policy h2 {
+        font-size: 24px;
+    }
+
+    .privacy-policy p,
+    .privacy-policy ul {
+        font-size: 16px;
     }
 
 
@@ -1300,46 +1343,6 @@ footer .copyright {
     }
 
 
-    /* Single Product */
-    #prodetails {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #prodetails .single-pro-image {
-        width: 100%;
-        margin-right: 0px;
-    }
-
-    #prodetails .single-pro-details {
-        width: 100%;
-    }
-
-
-
-    /* Blog Page */
-
-    #blog {
-        padding: 100px 20px 0 20px;
-    }
-
-    #blog .blog-box {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    #blog .blog-img {
-        width: 100%;
-        margin-right: 0px;
-        margin-bottom: 30px;
-    }
-
-    #blog .blog-details {
-        width: 100%;
-    }
-
-
     /* About Page */
     #about-head {
         flex-direction: column;
@@ -1385,18 +1388,28 @@ footer .copyright {
         margin-bottom: 30px;
     }
 
-    /* Cart Page */
-    #cart-add {
-        flex-direction: column;
+
+    /*Terms & Conditions */
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
     }
 
-
-    #coupon {
-        width: 100%;
-    }
-
-    #subtotal {
-        width: 100%;
+    .privacy-policy {
         padding: 20px;
+    }
+
+    .privacy-policy h1 {
+        font-size: 28px;
+    }
+
+    .privacy-policy h2 {
+        font-size: 24px;
+    }
+
+    .privacy-policy p,
+    .privacy-policy ul {
+        font-size: 16px;
     }
 }
