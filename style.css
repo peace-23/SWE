@@ -173,8 +173,6 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    /* Dark overlay */
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%);
     /* Gradient fade */
     z-index: 0;
@@ -316,17 +314,20 @@ body {
 }
 
 
-/* Styling for the Hairstyling Services */
+Styling for the Hairstyling Services */
 .services-section {
     padding: 50px 0;
     background-color: #f9f9f9;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 0 20px;
+
+
 }
+
 
 h2 {
     text-align: center;
@@ -338,12 +339,18 @@ h2 {
     text-align: center;
     margin-bottom: 40px;
     color: #666;
+
 }
 
 .services-grid {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; */
+
+    display: flex;
     gap: 20px;
+    justify-content: center;
+    
 
     /* display: flex;
     justify-content: space-between;
@@ -357,7 +364,7 @@ h2 {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     transition: transform 0.3s;
 
     flex: 1;
@@ -372,7 +379,7 @@ h2 {
 }
 
 .service-item h3 {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
     margin: 15px 0;
 }
 
@@ -381,30 +388,31 @@ h2 {
 }
 
 .service-item:hover {
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    border-color: #ffd700;
+}
+
+/* Icon Circle Styling */
+.icon-circle {
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+}
+
+.icon-circle i {
+    color: #088178;
+    font-size: 36px;
 }
 
 
-/* Responsive Design */
-@media (max-width: 1200px) {
-    .services-grid {
-        flex-wrap: wrap;
-        /* Allows items to wrap on smaller screens */
-    }
 
-    .service-item {
-        max-width: 48%;
-        /* Two services per row on smaller screens */
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .service-item {
-        max-width: 100%;
-        /* Full width on mobile */
-    }
-}
 
 
 .book-now-btn {
