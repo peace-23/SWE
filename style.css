@@ -314,8 +314,7 @@ body {
 }
 
 
-Styling for the Hairstyling Services */
-.services-section {
+Styling for the Hairstyling Services */ .services-section {
     padding: 50px 0;
     background-color: #f9f9f9;
 }
@@ -350,7 +349,7 @@ h2 {
     display: flex;
     gap: 20px;
     justify-content: center;
-    
+
 
     /* display: flex;
     justify-content: space-between;
@@ -1157,7 +1156,7 @@ footer .copyright {
         right: -300px;
         height: 100vh;
         width: 300px;
-        background-color: #E3E6F3;
+        background-color: #222;
         box-shadow: 0 40px 60px rgb(0, 0, 0, 0.1);
         padding: 80px 0 0 10px;
         transition: 0.3s;
@@ -1166,7 +1165,7 @@ footer .copyright {
 
     #navbar.active {
         right: 0px;
-        
+
     }
 
     #navbar li {
@@ -1190,7 +1189,7 @@ footer .copyright {
         position: absolute;
         top: 30px;
         left: 30px;
-        color: #222;
+        color: #EAB948;
         font-size: 24px;
     }
 
@@ -1255,26 +1254,34 @@ footer .copyright {
 
     header nav ul li {
         display: block;
-        margin: 10px 0;
+        margin: 15px 0;
     }
 
-    .privacy-policy {
-        padding: 20px;
+    .terms-conditions {
+        padding: 50px;
     }
 
-    .privacy-policy h1 {
-        font-size: 28px;
+    .terms-conditions h1 {
+        font-size: 20px;
     }
 
-    .privacy-policy h2 {
-        font-size: 24px;
+    .terms-conditions h2 {
+        font-size: 20px;
     }
 
-    .privacy-policy p,
-    .privacy-policy ul {
-        font-size: 16px;
+    .terms-conditions p,
+    .terms-conditions ul {
+        font-size: 15px;
     }
 
+    #page-header {
+        height: 25vh;
+    }
+
+    #page-header h2 {
+        font-size: 40px;
+        color: #EAB948;
+    }
 
 }
 
@@ -1398,26 +1405,35 @@ footer .copyright {
 
 
     /*Terms & Conditions */
-
     header nav ul li {
         display: block;
-        margin: 10px 0;
+        margin: 15px 0;
     }
 
-    .privacy-policy {
-        padding: 20px;
+    .terms-conditions {
+        padding: 25px;
     }
 
-    .privacy-policy h1 {
-        font-size: 28px;
+    .terms-conditions h1 {
+        font-size: 15px;
     }
 
-    .privacy-policy h2 {
-        font-size: 24px;
+    .terms-conditions h2 {
+        font-size: 20px;
     }
 
-    .privacy-policy p,
-    .privacy-policy ul {
-        font-size: 16px;
+    .terms-conditions p,
+    .terms-conditions ul {
+        font-size: 15px;
     }
+
+    #page-header {
+        height: 25vh;
+    }
+
+    #page-header h2 {
+        font-size: 25px;
+        color: #EAB948;
+    }
+
 }
