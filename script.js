@@ -70,3 +70,8 @@ function showNextTestimonial() {
 // Auto-slide every 5 seconds
 setInterval(showNextTestimonial, 7000);
 
+
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
