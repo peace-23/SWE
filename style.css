@@ -907,10 +907,41 @@ footer .copyright {
     color: #000;
 }
 
-/* FAQ Section */
+.faq-section {
+    width:85%;
+    padding: 100px;
+    margin-left: 100px;
+    
+}
+
+
+.faq {
+    border-bottom: 1px solid #EAB948;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.faq p {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.faq.open p {
+    max-height: 500px; /* Adjust max height to accommodate longer answers */
+}
+
+
+/* FAQ Section
 .faq-section {
     padding: 50px 0;
-    background-color: #fff;
+    background-color: #EAB948;
 }
 
 .faq-section .container {
@@ -921,7 +952,7 @@ footer .copyright {
 .faq-section h2 {
     text-align: center;
     margin-bottom: 40px;
-    color: #e67e22;
+    color: #fff;
 }
 
 .faq {
@@ -947,7 +978,7 @@ footer .copyright {
 .faq a:hover {
     text-decoration: none;
 }
-
+ */
 
 
 
