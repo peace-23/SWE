@@ -9,6 +9,18 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const faqs = document.querySelectorAll(".faq");
+            faqs.forEach(faq => {
+                faq.addEventListener("click", () => {
+                    faq.classList.toggle("active");
+                });
+            });
+        });
+    </script>
+
 </head>
 
 <body>
@@ -20,8 +32,8 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#services">Services</a></li>
                 <li><a href="index.html#gallery1">Gallery</a></li>
-                <li><a href="about.html"  target="_blank">About</a></li>
-                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <a href="#" id="close"><i class="fa-sharp fa-solid fa-xmark"></i></a>
             </ul>
         </div>
@@ -31,65 +43,167 @@
         </div>
     </section>
 
-    <section id="page-header" class="about-header">
-        <h2>Frequently Asked Questions</h2>
-    </section>
 
     <!-- FAQ Section -->
-    <section class="faq-section">
-        <div class="container">
-            <div class="faq">
+
+    <section id="faq-section">
+        <h2 class="title"> FAQs</h2>
+
+        <div class="faq">
+            <div class="question">
                 <h3>What services do you offer?</h3>
-                <p>At <strong>Slay with Elegance</strong>, we specialize in professional hairstyling services, including wig installation, hair braiding, weaves, and styling for natural hair.</p>
-            </div>
 
-            <div class="faq">
+                <svg width="40" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+                </svg>
+
+            </div>
+            <div class="answer">
+                <p>At <strong>Slay with Elegance</strong>, we specialize in professional hairstyling
+                    services, including wig installation, hair braiding, weaves, and styling for natural hair.</p>
+
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">
                 <h3>How can I book an appointment?</h3>
-                <p>Booking is easy! Visit our <a href="https://calendly.com/parikpo20/30min" target="_blank" >Booking Page</a> to select your desired service, date, and time.</p>
-            </div>
 
-            <div class="faq">
-                <h3>What should I bring to my appointment?</h3>
-                <p>If you're coming for wig installation or weave styling, bring the hairpiece you'd like installed. All other styling tools and products will be provided.</p>
-            </div>
+                <svg width="40" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+                </svg>
 
-            <div class="faq">
-                <h3>What is your cancellation policy?</h3>
-                <p>Please notify us at least 24 hours in advance to avoid a cancellation fee.</p>
             </div>
+            <div class="answer">
+                <p>Booking is easy! Visit our <a href="https://calendly.com/parikpo20/30min" target="_blank">Booking
+                        Page</a> to select your desired service, date, and time.</p>
 
-            <div class="faq">
-                <h3>Do you offer consultations?</h3>
-                <p>Yes! We offer free consultations to help you determine the best hairstyle for you. Book a consultation through our <a href="https://calendly.com/parikpo20/30min" target="_blank">Booking Page</a>.</p>
             </div>
+        </div>
 
-            <div class="faq">
-                <h3>What payment methods do you accept?</h3>
-                <p>We accept all major credit cards, debit cards, and PayPal. Payments can be made online or in person.</p>
+        <div class="faq">
+            <div class="question">
+                <h3>What should I bring to my appointment? </h3>
+
+                <svg width="40" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+                </svg>
+
             </div>
+            <div class="answer">
+                <p>If you're coming for wig installation or weave styling, bring the hairpiece you'd like installed. All
+                    other styling tools and products will be provided.</p>
 
-            <div class="faq">
-                <h3>Do you provide styling for special occasions?</h3>
-                <p>Yes, we offer tailored hairstyling services for weddings, proms, photoshoots, and other events. Contact us for custom packages.</p>
             </div>
+        </div>
 
-            <div class="faq">
-                <h3>What safety measures do you follow?</h3>
-                <p>We follow strict COVID-19 protocols, including sanitizing tools, wearing masks, and maintaining a clean salon environment.</p>
+        <div class="faq">
+            <div class="question">
+                <h3>Do you offer consultations? </h3>
+
+                <svg width="40" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+                </svg>
+
             </div>
+            <div class="answer">
+                <p>Yes! We offer free consultations to help you determine the best hairstyle for you. Book a
+                    consultation
+                    through our <a href="https://calendly.com/parikpo20/30min" target="_blank">Booking Page</a>.</p>
 
-            <div class="faq">
-                <h3>Where are you located?</h3>
-                <p>We are located at <strong>150B Goldie Street, Calabar, Cross-River</strong>. Visit our <a href="contact.html">Contact Page</a> for directions.</p>
             </div>
+        </div>
 
-            <div class="faq">
-                <h3>Do you offer gift cards?</h3>
+        <div class="faq">
+            <div class="question">
+                <h3>What payment methods do you accept? </h3>
+
+                <svg width="40" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+                </svg>
+
+            </div>
+            <div class="answer">
+                <p>We accept all major credit cards, debit cards, and PayPal. Payments can be made online or in person.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">
+                <h3>Do you provide styling for special occasions? </h3>
+
+                <svg width="40" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+                </svg>
+
+            </div>
+            <div class="answer">
+                <p>Yes, we offer tailored hairstyling services for weddings, proms, photoshoots, and other events.
+                    Contact
+                    us for custom packages.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">
+                <h3>What safety measures do you follow? </h3>
+
+                <svg width="40" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+                </svg>
+
+            </div>
+            <div class="answer">
+                <p>We follow strict COVID-19 protocols, including sanitizing tools, wearing masks, and maintaining a
+                    clean
+                    salon environment.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">
+                <h3>Where are you located? </h3>
+
+                <svg width="40" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+                </svg>
+
+            </div>
+            <div class="answer">
+                <p>We are located at <strong>150B Goldie Street, Calabar, Cross-River</strong>. Visit our <a
+                        href="contact.html">Contact Page</a> for directions.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">
+                <h3>Do you offer gift cards? </h3>
+
+                <svg width="40" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+                </svg>
+
+            </div>
+            <div class="answer">
                 <p>Yes, we offer gift cards for any of our services or products. Perfect for gifting a loved one.</p>
             </div>
+        </div>
+
+        <div class="faq">
 
         </div>
-        
+
     </section>
 
 

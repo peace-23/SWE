@@ -244,7 +244,7 @@ body {
     background: #EAB948;
     z-index: 0;
     transition: width 0.5s ease;
-    
+
 }
 
 #hero button:hover::before {
@@ -253,7 +253,7 @@ body {
 
 #hero button:hover a {
     color: #1a1a1a;
-    
+
 }
 
 #hero button:hover {
@@ -762,7 +762,7 @@ footer .copyright {
 
 /* About Page */
 #page-header.about-header {
-    background-image: url("img/about/banner.png");
+    background-image: url("img/banner/b5.jpg");
 }
 
 #about-head {
@@ -907,78 +907,94 @@ footer .copyright {
     color: #000;
 }
 
-.faq-section {
-    width:85%;
-    padding: 100px;
-    margin-left: 100px;
-    
+
+/* FAQ */
+#faq-section {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EAB948;
+
 }
 
+.title {
+    font-size: 3rem;
+    margin: 2rem 0rem;
+    color: #000;
+}
 
 .faq {
-    border-bottom: 1px solid #EAB948;
+    max-width: 900px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #222;
     padding: 10px 0;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.question h3 {
+    font-size: 1.5rem;
+}
 
 
-.faq p {
+.answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 1.4s ease;
     font-size: 1rem;
-    color: #333;
-    margin-top: 10px;
-}
+    
 
-.faq.open p {
-    max-height: 500px; /* Adjust max height to accommodate longer answers */
 }
 
 
-/* FAQ Section
-.faq-section {
-    padding: 50px 0;
-    background-color: #EAB948;
+.answer p {
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+
 }
 
-.faq-section .container {
-    max-width: 800px;
-    margin: 0 auto;
+.faq.active .answer {
+    max-height: 300px;
+    transition: max-height 0.3s ease;
+    animation: fade 1s ease-in-out;
 }
 
-.faq-section h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    color: #fff;
+svg {
+    transition: transform 0.5s ease-in;
+    transform: rotate(180deg);
 }
 
-.faq {
-    margin-bottom: 20px;
+.faq.active svg {
+    transform: rotate(360deg);
 }
 
-.faq h3 {
-    font-size: 1.2rem;
-    color: #e67e22;
-    margin-bottom: 10px;
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
 }
 
-.faq p {
-    margin-bottom: 10px;
-    color: #333;
-}
 
-.faq a {
-    color: #e67e22;
-    text-decoration: underline;
-}
-
-.faq a:hover {
-    text-decoration: none;
-}
- */
 
 
 

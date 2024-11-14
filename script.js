@@ -79,31 +79,4 @@ function scrollToTop() {
 
 
 
-// // This JavaScript will add a click event listener to each FAQ question, 
-// toggling the open class and showing or hiding the answer.
-document.addEventListener("DOMContentLoaded", function () {
-    const faqs = document.querySelectorAll(".faq");
-
-    faqs.forEach(faq => {
-        faq.addEventListener("click", () => {
-            // Close any other open FAQs
-            faqs.forEach(otherFaq => {
-                if (otherFaq !== faq) {
-                    otherFaq.classList.remove("open");
-                    otherFaq.querySelector(".faq-answer").style.maxHeight = "0";
-                }
-            });
-            // Toggle the clicked FAQ
-            faq.classList.toggle("open");
-
-            // Adjust the max-height for the answer
-            const answer = faq.querySelector(".faq-answer");
-            if (faq.classList.contains("open")) {
-                answer.style.maxHeight = answer.scrollHeight + "px";
-            } else {
-                answer.style.maxHeight = "0";
-            }
-        });
-    });
-});
 
