@@ -3,7 +3,7 @@
 
 # Slay-With-Elegance-Website
 
-[<img alt="Slay with Elegance" width="100%" src="https://github.com/" />](https://www.slaywithelegance.com/)
+[<img alt="Slay with Elegance" width="100%" src="https://github.com/" />](https://slaywithelegance.netlify.app/)
 
 ## About this Website
 
@@ -32,13 +32,13 @@ Welcome to **Slay with Elegance**, a premier hairstyling and beauty service prov
 - **About Page:** Learn more about our story and what makes us stand out.
 - **Contact Us Page:** Get in touch or book an appointment online.
 
-## Explore More
-- **Special Offers:** Up to 20% off on selected services.
-- **Booking:** Book your appointments with ease via Calendly integration.
+<!-- ## Explore More -->
+<!-- - **Special Offers:** Up to 20% off on selected services.
+- **Booking:** Book your appointments with ease via Calendly integration. -->
 
-Get the full source code from [here1](https://).
+<!-- Get the full source code from [here1](https://).
 
-Get the full source code from [here2](https://).
+Get the full source code from [here2](https://). -->
 
 ---
 
