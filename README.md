@@ -3,7 +3,7 @@
 
 # Slay-With-Elegance-Website
 
-[<img alt="Slay with Elegance" width="100%" src="https://github.com/" />](https://slaywithelegance.netlify.app/)
+[<img alt="Slay with Elegance" width="100%" src="https://github.com/peace-23/SWE/blob/main/img/logo.png" />](https://slaywithelegance.netlify.app/)
 
 ## About this Website
 
