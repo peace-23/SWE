@@ -72,9 +72,32 @@ setInterval(showNextTestimonial, 7000);
 
 
 
+
+
+
+
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+// Show/hide scroll-to-top button based on scroll position
+const scrollButton = document.querySelector('.icon_arrow');
+
+window.addEventListener('scroll', () => {
+    // Show button when not at the top of the page
+    if (window.scrollY > 0) {
+        scrollButton.style.display = 'block';
+    } else {
+        scrollButton.style.display = 'none';
+    }
+});
+
+// Ensure the button is hidden initially if the page is loaded at the top
+document.addEventListener('DOMContentLoaded', () => {
+    if (window.scrollY === 0) {
+        scrollButton.style.display = 'none';
+    }
+});
 
 
 

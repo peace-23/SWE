@@ -221,8 +221,8 @@ body {
     font-size: 15px;
     overflow: hidden;
     transition: color 0.5s ease;
-    
-    
+
+
 
 
 }
@@ -571,12 +571,11 @@ h2 {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     transform: rotate(180deg);
     cursor: pointer;
     z-index: 1000;
-
     background-color: #eab94876;
     border-radius: 50%;
     display: flex;
@@ -584,7 +583,10 @@ h2 {
     justify-content: center;
     padding: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
 
+.icon_arrow:hover {
+    background-color: #fff;
 }
 
 
@@ -763,40 +765,124 @@ footer .copyright {
 
 
 /* About Page */
+
+/* About Page */
+#page-header.about-header {
+    background-image: url("img/banner/b5.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#page-header.about-header h2 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#page-header.about-header p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #f0e9e9;
+}
+
+/* About Section */
 #page-header.about-header {
     background-image: url("img/banner/b5.jpg");
 }
-
 #about-head {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    /* Ensures it adapts on smaller screens */
+    padding: 100px;
+    gap: 30px;
+    background-color: #eab94835;
 }
 
 #about-head img {
-    width: 50%;
+    width: 30%;
+    /* Adjust for better proportionality */
+    max-width: 70%;
+    /* Ensure image responsiveness */
     height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    /* Subtle shadow for a modern look */
 }
 
 #about-head div {
     padding-left: 40px;
+    flex: 1;
+    /* Allows the text to take up available space dynamically */
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.8;
 }
 
-#about-app {
+#about-head div h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ff6f61;
+}
+
+#about-head div p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+/* Mission/Vision */
+#about-mission-vision {
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#about-mission-vision .mission-vision-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Ensures responsiveness */
+    gap: 20px;
+}
+
+#about-mission-vision .mission,
+#about-mission-vision .vision {
+    flex: 1;
+    /* Makes each section take equal space */
+    min-width: 300px;
+    /* Ensures columns don’t shrink too much */
+    background-color: #eab94835;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-#about-app .video {
-    width: 70%;
-    height: 100%;
-    margin: 30px auto 0 auto;
+#about-mission-vision h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-#about-app .video video {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
+#about-mission-vision p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
 }
 
+@media (max-width: 768px) {
+    #about-mission-vision .mission-vision-container {
+        flex-direction: column;
+        /* Stacks the sections on smaller screens */
+    }
+}
 
 
 /* Contact Page */
@@ -1240,6 +1326,28 @@ svg {
         height: 20px;
     }
 
+    /* About */
+    #about-head {
+        flex-direction: column;
+        /* Stacks content vertically */
+        text-align: center;
+    }
+
+    #about-head img {
+        width: 50%;
+        /* Full width for smaller screens */
+    }
+
+    #about-head div {
+        padding-left: 0;
+        /* Center-align text without padding */
+    }
+
+    #about-mission-vision .mission-vision-container {
+        flex-direction: column;
+        /* Stacks the sections on smaller screens */
+    }
+
 }
 
 
@@ -1432,37 +1540,41 @@ svg {
         color: #EAB948;
     }
 
-        /* Faq */
-        #faq-section {
-            min-height: 0;
-        }
-    
-        .title {
-            font-size: 1.6rem;
-            margin: 1rem 0;
-        }
-    
-        .faq {
-            margin-top: 1rem;
-            margin-left: 35px;
-            margin-right: 35px;
-            padding: 6px 0;
-        }
-    
-        .question h3 {
-            font-size: 1.1rem;
-        }
-    
-        .answer p {
-            font-size: 1rem;
-        }
-    
-        svg {
-            width: 28px;
-            height: 18px;
-        }
+    /* Faq */
+    #faq-section {
+        min-height: 0;
+    }
 
+    .title {
+        font-size: 1.6rem;
+        margin: 1rem 0;
+    }
 
+    .faq {
+        margin-top: 1rem;
+        margin-left: 35px;
+        margin-right: 35px;
+        padding: 6px 0;
+    }
 
+    .question h3 {
+        font-size: 1.1rem;
+    }
+
+    .answer p {
+        font-size: 1rem;
+    }
+
+    svg {
+        width: 28px;
+        height: 18px;
+    }
+
+    /* About */
+    #about-mission-vision .mission-vision-container {
+        flex-direction: column;
+        /* Stacks the sections on smaller screens */
+
+    }
 
 }
