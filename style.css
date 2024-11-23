@@ -661,86 +661,147 @@ footer .copyright {
 
 
 /* Privacy Policy Section */
-.privacy-policy {
-    background-color: #fff;
-    padding: 40px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
+#privacypolicy-section {
+    min-height: 100vh;
+    width: 100%;
     margin: 0 auto;
-    padding: 20px;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #f7f7f7, #eab94873);
+    padding: 40px 20px;
+}
+
+.privacy-policy {
+    max-width: 900px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .privacy-policy h1 {
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 20px;
-    color: #000;
+    color: #2c3e50;
+    text-align: center;
 }
 
 .privacy-policy h2 {
-    font-size: 28px;
-    margin: 20px 0 10px;
-    color: #444;
+    font-size: 24px;
+    margin: 20px 0 15px;
+    color: #34495e;
     text-align: left;
+    border-bottom: 2px solid #eab948;
+    padding-bottom: 5px;
+}
+
+.privacy-policy h3 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #444;
+    font-weight: 600;
+}
+
+.privacy-policy h4 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+    font-weight: 500;
 }
 
 .privacy-policy p,
 .privacy-policy ul {
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 16px;
     color: #555;
+    line-height: 1.6;
 }
 
 .privacy-policy ul {
-    padding-left: 20px;
+    padding-left: 40px;
+    list-style: none;
 }
 
 .privacy-policy ul li {
     list-style-type: disc;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.privacy-policy a {
+    color: #eab948;
+    text-decoration: underline;
+}
+
+.privacy-policy a:hover {
+    color: #d08d36;
+}
+
+.privacy-policy p:last-child {
+    margin-bottom: 0;
 }
 
 
 
 /*Terms & Conditions */
-.terms-conditions {
-    background-color: #fff;
-    padding: 40px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
+#termsConditions-section {
+    min-height: 100vh;
+    width: 100%;
     margin: 0 auto;
-    padding: 20px;
-    text-align: left;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eab94845;
+    padding: 30px;
 }
 
-.terms-conditions h1,
-.terms-conditions h2,
-.terms-conditions p {
-    text-align: left;
-    margin-bottom: 20px;
-    line-height: 1.6;
-    color: #333;
+/* Content Styling */
+.terms-conditions {
+    max-width: 800px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Typography */
 .terms-conditions h1 {
     font-size: 36px;
     font-weight: bold;
+    margin-bottom: 20px;
+    color: #444;
+    text-align: center;
 }
 
 .terms-conditions h2 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 .terms-conditions p {
-    font-size: 16px;
-    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
 }
 
+/* Highlight Text */
+.terms-conditions strong {
+    color: #e38b0c;
+}
+
+/* Responsive Design */
+/* @media screen and (max-width: 768px) {
+   
+} */
 
 
 /* Shop Page */
@@ -795,6 +856,7 @@ footer .copyright {
 #page-header.about-header {
     background-image: url("img/banner/b5.jpg");
 }
+
 #about-head {
     display: flex;
     align-items: center;
@@ -803,6 +865,7 @@ footer .copyright {
     padding: 100px;
     gap: 30px;
     background-color: #eab94835;
+
 }
 
 #about-head img {
@@ -839,51 +902,86 @@ footer .copyright {
 /* Mission/Vision */
 #about-mission-vision {
     padding: 40px;
-    border-radius: 10px;
     margin-top: 30px;
-}
-
-#about-mission-vision .mission-vision-container {
     display: flex;
-    flex-wrap: wrap;
-    /* Ensures responsiveness */
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* Centers all text */
 }
 
-#about-mission-vision .mission,
-#about-mission-vision .vision {
-    flex: 1;
-    /* Makes each section take equal space */
-    min-width: 300px;
-    /* Ensures columns don’t shrink too much */
-    background-color: #eab94835;
-    padding: 20px;
+.mission-vision-container {
+    width: 100%;
+    /* Full width of the parent container */
+    max-width: 900px;
+    /* Limit the container width for better readability */
+    display: flex;
+    flex-direction: column;
+    /* Stacks mission above vision */
+    align-items: center;
+    /* Centers child elements */
+    gap: 20px;
+    /* Adds space between mission, divider, and vision */
+}
+
+/* Styling for the mission and vision sections */
+.mission,
+.vision {
+    padding: 30px;
+    background-color: #f9f9f9;
+    /* Light background for contrast */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    /* Subtle shadow */
+    width: 100%;
+    /* Ensure it fills the container */
+    opacity: 0;
+    /* Start hidden */
+    transform: translateX(100px);
+    /* Initial position */
+    transition: all 0.6s ease;
+    /* Smooth animation */
 }
 
-#about-mission-vision h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.mission {
+    transform: translateX(-100px);
+    /* Mission slides in from the left */
 }
 
-#about-mission-vision p {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.6;
+.mission.visible,
+.vision.visible {
+    opacity: 1;
+    /* Become visible */
+    transform: translateX(0);
+    /* Return to original position */
 }
 
-@media (max-width: 768px) {
-    #about-mission-vision .mission-vision-container {
-        flex-direction: column;
-        /* Stacks the sections on smaller screens */
-    }
+/* Divider styling */
+.divider {
+    width: 80%;
+    /* Length of the line relative to the container */
+    height: 2px;
+    /* Thickness of the line */
+    background-color: #eab948;
+    /* Matches hairstyling aesthetic */
+    border-radius: 5px;
+    /* Rounded edges for a polished look */
+    opacity: 0;
+    /* Start hidden */
+    transform: scaleX(0);
+    /* Shrinks horizontally */
+    transform-origin: center;
+    /* Expands from the center */
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    /* Smooth fade and growth */
 }
 
+.divider.visible {
+    opacity: 1;
+    /* Become visible */
+    transform: scaleX(1);
+    /* Fully expand horizontally */
+}
 
 /* Contact Page */
 #contact-details {
@@ -1004,7 +1102,8 @@ footer .copyright {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #EAB948;
+    background-color: #eab94845;
+
 
 }
 
@@ -1271,20 +1370,19 @@ svg {
     }
 
     .terms-conditions {
-        padding: 50px;
+        padding: 15px 20px;
     }
 
     .terms-conditions h1 {
-        font-size: 20px;
+        font-size: 28px;
     }
 
     .terms-conditions h2 {
         font-size: 20px;
     }
 
-    .terms-conditions p,
-    .terms-conditions ul {
-        font-size: 15px;
+    .terms-conditions p {
+        font-size: 16px;
     }
 
     #page-header {
@@ -1329,23 +1427,71 @@ svg {
     /* About */
     #about-head {
         flex-direction: column;
-        /* Stacks content vertically */
         text-align: center;
     }
 
     #about-head img {
         width: 50%;
-        /* Full width for smaller screens */
     }
 
     #about-head div {
         padding-left: 0;
-        /* Center-align text without padding */
     }
 
     #about-mission-vision .mission-vision-container {
         flex-direction: column;
-        /* Stacks the sections on smaller screens */
+    }
+
+    #about-mission-vision {
+        padding: 20px;
+    }
+
+    #about-mission-vision {
+        padding: 20px;
+    }
+
+    .mission-vision-container {
+        gap: 15px;
+    }
+
+    .mission,
+    .vision {
+        padding: 20px;
+    }
+
+    .divider {
+        width: 90%;
+    }
+
+
+    /* Privacy Policy */
+    .privacy-policy {
+        padding: 20px;
+    }
+
+    .privacy-policy h1 {
+        font-size: 32px;
+    }
+
+    .privacy-policy h2 {
+        font-size: 20px;
+    }
+
+    .privacy-policy h3 {
+        font-size: 18px;
+    }
+
+    .privacy-policy h4 {
+        font-size: 16px;
+    }
+
+    .privacy-policy p,
+    .privacy-policy ul {
+        font-size: 14px;
+    }
+
+    .privacy-policy ul {
+        padding-left: 30px;
     }
 
 }
@@ -1509,35 +1655,22 @@ svg {
 
 
     /*Terms & Conditions */
-    header nav ul li {
-        display: block;
-        margin: 15px 0;
-    }
-
     .terms-conditions {
-        padding: 25px;
+        padding: 10px;
+        font-size: 15px;
     }
 
     .terms-conditions h1 {
-        font-size: 15px;
-    }
-
-    .terms-conditions h2 {
         font-size: 20px;
     }
 
-    .terms-conditions p,
-    .terms-conditions ul {
+    .terms-conditions h2 {
+        font-size: 18px;
+    }
+
+    .terms-conditions p {
         font-size: 15px;
-    }
-
-    #page-header {
-        height: 25vh;
-    }
-
-    #page-header h2 {
-        font-size: 25px;
-        color: #EAB948;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     /* Faq */

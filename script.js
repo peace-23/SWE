@@ -102,4 +102,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+// Animation for Mission and Vision Statements
+document.addEventListener("scroll", () => {
+    const mission = document.querySelector(".mission");
+    const vision = document.querySelector(".vision");
+    const divider = document.querySelector(".divider");
+
+    const missionPosition = mission.getBoundingClientRect().top;
+    const visionPosition = vision.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.2;
+
+    if (missionPosition < screenPosition) {
+        mission.classList.add("visible");
+    }
+    if (visionPosition < screenPosition) {
+        vision.classList.add("visible");
+        divider.classList.add("visible");
+    }
+});
+
+
 
