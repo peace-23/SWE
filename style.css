@@ -819,25 +819,21 @@ footer .copyright {
     color: #fff;
 }
 
-
-
-/* About Page */
-
-/* About Page */
+/* About Page Header */
 #page-header.about-header {
     background-image: url("img/banner/b5.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding: 100px 0;
-    color: white;
+    padding: 80px 20px;
+    color: #fff;
     font-family: 'Poppins', sans-serif;
 }
 
 #page-header.about-header h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     letter-spacing: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -845,139 +841,130 @@ footer .copyright {
 #page-header.about-header p {
     font-size: 1.2rem;
     font-style: italic;
-    color: #f0e9e9;
+    color: #f5f5f5;
 }
 
 /* About Section */
-#page-header.about-header {
-    background-image: url("img/banner/b5.jpg");
-}
-
 #about-head {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    /* Ensures it adapts on smaller screens */
-    padding: 100px;
+    padding: 60px 30px;
     gap: 30px;
-    background-color: #eab94835;
-
+    background-color: #faf3e4;
 }
 
 #about-head img {
-    width: 30%;
-    /* Adjust for better proportionality */
-    max-width: 70%;
-    /* Ensure image responsiveness */
+    flex: 1 1 40%;
+    max-width: 400px;
     height: auto;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    /* Subtle shadow for a modern look */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 #about-head div {
-    padding-left: 40px;
-    flex: 1;
-    /* Allows the text to take up available space dynamically */
+    flex: 1 1 50%;
+    padding: 20px;
     font-family: 'Poppins', sans-serif;
-    color: #333;
+    color: #444;
     line-height: 1.8;
 }
 
 #about-head div h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
     color: #ff6f61;
 }
 
 #about-head div p {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-size: 1rem;
+    text-align: justify;
 }
 
-/* Mission/Vision */
+/* Mission & Vision Section */
 #about-mission-vision {
-    padding: 40px;
+    padding: 60px 30px;
+    background-color: #f8f9fa;
     margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    /* Centers all text */
 }
 
 .mission-vision-container {
     width: 100%;
-    /* Full width of the parent container */
-    max-width: 900px;
-    /* Limit the container width for better readability */
+    max-width: 1000px;
     display: flex;
-    flex-direction: column;
-    /* Stacks mission above vision */
-    align-items: center;
-    /* Centers child elements */
-    gap: 20px;
-    /* Adds space between mission, divider, and vision */
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-/* Styling for the mission and vision sections */
+/* Mission and Vision Boxes */
 .mission,
 .vision {
-    padding: 30px;
-    background-color: #f9f9f9;
-    /* Light background for contrast */
+    flex: 1 1 45%;
+    padding: 20px;
+    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow */
-    width: 100%;
-    /* Ensure it fills the container */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transform: translateY(30px);
     opacity: 0;
-    /* Start hidden */
-    transform: translateX(100px);
-    /* Initial position */
     transition: all 0.6s ease;
-    /* Smooth animation */
 }
 
-.mission {
-    transform: translateX(-100px);
-    /* Mission slides in from the left */
+.mission h2,
+.vision h2 {
+    font-size: 2rem;
+    color: #ff6f61;
+    margin-bottom: 15px;
 }
 
+.mission p,
+.vision p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Animation for Visibility */
 .mission.visible,
 .vision.visible {
     opacity: 1;
-    /* Become visible */
-    transform: translateX(0);
-    /* Return to original position */
+    transform: translateY(0);
 }
 
-/* Divider styling */
+/* Divider Styling */
 .divider {
     width: 80%;
-    /* Length of the line relative to the container */
     height: 2px;
-    /* Thickness of the line */
     background-color: #eab948;
-    /* Matches hairstyling aesthetic */
+    margin: 20px auto;
     border-radius: 5px;
-    /* Rounded edges for a polished look */
     opacity: 0;
-    /* Start hidden */
     transform: scaleX(0);
-    /* Shrinks horizontally */
     transform-origin: center;
-    /* Expands from the center */
     transition: transform 0.6s ease, opacity 0.6s ease;
-    /* Smooth fade and growth */
 }
 
 .divider.visible {
     opacity: 1;
-    /* Become visible */
     transform: scaleX(1);
-    /* Fully expand horizontally */
 }
+
+/* Arrow Styling */
+.icon_arrow {
+    margin-top: 20px;
+    width: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.icon_arrow:hover {
+    transform: scale(1.1);
+}
+
 
 /* Contact Page */
 #contact-details {
