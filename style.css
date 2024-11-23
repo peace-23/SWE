@@ -799,11 +799,6 @@ footer .copyright {
     color: #e38b0c;
 }
 
-/* Responsive Design */
-/* @media screen and (max-width: 768px) {
-   
-} */
-
 
 /* Shop Page */
 #page-header {
@@ -1659,7 +1654,7 @@ svg {
 
     /*Terms & Conditions */
     .terms-conditions {
-        padding: 10px;
+        padding: 15px;
         font-size: 15px;
     }
 
@@ -1668,7 +1663,7 @@ svg {
     }
 
     .terms-conditions h2 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .terms-conditions p {
