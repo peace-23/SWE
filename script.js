@@ -3,20 +3,21 @@ const bar = document.getElementById('bar');
 const close = document.getElementById('close');
 const nav = document.getElementById('navbar');
 
-
-
+// Open navigation menu
 if (bar) {
     bar.addEventListener('click', () => {
         nav.classList.add('active');
     })
 }
 
-
+// Close navigation menu
 if (close) {
     close.addEventListener('click', () => {
         nav.classList.remove('active');
     })
 }
+
+
 
 
 

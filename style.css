@@ -909,7 +909,7 @@ footer .copyright {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
     transform: translateY(30px);
-    opacity: 0;
+    /* opacity: 0; */
     transition: all 0.6s ease;
 }
 
@@ -953,17 +953,6 @@ footer .copyright {
     transform: scaleX(1);
 }
 
-/* Arrow Styling */
-.icon_arrow {
-    margin-top: 20px;
-    width: 40px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.icon_arrow:hover {
-    transform: scale(1.1);
-}
 
 
 /* Contact Page */
@@ -1506,11 +1495,22 @@ svg {
 
     /* Hero */
     #hero h2 {
-        font-size: 21px;
+        font-size: 20px;
+        margin-bottom: 0;
     }
 
     #hero h1 {
         font-size: 40px;
+        line-height: 55px;
+    }
+
+    #hero h4 {
+        padding-bottom: 5px;
+        font-size: 15px;
+    }
+
+    #hero p {
+        line-height: 30px;
     }
 
     #hero {
@@ -1529,13 +1529,15 @@ svg {
         background-position: 55%;
     }
 
-
-
     .service-item {
-
         width: 100%;
         flex: none;
     }
+
+    .service-intro {
+        line-height: 25px;
+    }
+
 
     #gallery1 .pro {
         width: 100%;
@@ -1565,6 +1567,7 @@ svg {
 
     .testimonial-item p {
         font-size: 1.2em;
+        line-height: 30px;
     }
 
     .testimonial-item h6 {
@@ -1693,6 +1696,10 @@ svg {
         flex-direction: column;
         /* Stacks the sections on smaller screens */
 
+    }
+
+    #about-head div h2 {
+        font-size: 2.2rem;
     }
 
 }
